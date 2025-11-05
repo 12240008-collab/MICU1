@@ -1,0 +1,210 @@
+/* ---------- Root Color Variables ---------- */
+:root {
+  --primary: #1E90FF;
+  --primary-hover: #0D6EFD;
+  --secondary: #EAF6FF;
+  --success: #2ECC71;
+  --danger: #E74C3C;
+  --warning: #F1C40F;
+  --text-dark: #2C3E50;
+  --text-light: #7F8C8D;
+  --background: #FFFFFF;
+  --gray: #BDC3C7;
+  --radius: 12px;
+  --transition: 0.3s ease;
+}
+
+/* ---------- Base Styles ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: var(--secondary);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* ---------- Container ---------- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.navbar ul li a:hover {
+  color: var(--warning);
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: var(--radius);
+  color: #fff;
+  background-color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-success { background-color: var(--success); }
+.btn-danger { background-color: var(--danger); }
+.btn-warning { background-color: var(--warning); color: #333; }
+
+/* ---------- Card ---------- */
+.card {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--secondary);
+  color: var(--text-dark);
+  font-size: 14px;
+  border-top: 1px solid var(--gray);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar ul li {
+    margin: 8px 0;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
+
+.navbar {
+  background: var(--primary);
+  color: #fff;
+  padding: 12px 0;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar .logo img {
+  width: 36px;
+  height: 36px;
+}
+
+.navbar .logo span {
+  font-weight: 600;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-info .user-name {
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.avatar-small {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.avatar-small:hover {
+  transform: scale(1.1);
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+

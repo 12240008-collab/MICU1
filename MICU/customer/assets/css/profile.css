@@ -1,0 +1,130 @@
+body {
+  background: #f5f7fb;
+  font-family: 'Poppins', sans-serif;
+}
+
+.profile-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 20px;
+}
+
+.profile-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  width: 900px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  animation: fadeIn 0.5s ease;
+}
+
+.profile-card h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.profile-card hr {
+  border: none;
+  border-top: 2px solid #eee;
+  margin-bottom: 20px;
+}
+
+.alert {
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.alert.success {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.alert.error {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.profile-form {
+  display: flex;
+  gap: 30px;
+}
+
+.profile-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-box {
+  border: 3px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px;
+  background: #f2f4f7;
+}
+
+.avatar-large {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.profile-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile-right label {
+  font-weight: 500;
+  color: #333;
+}
+
+.profile-right input[type="text"],
+.profile-right input[type="email"],
+.profile-right input[type="password"],
+.profile-right input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: fit-content;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: #005fcc;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .profile-form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-card {
+    width: 100%;
+  }
+}

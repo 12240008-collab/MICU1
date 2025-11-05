@@ -1,0 +1,42 @@
+/* ======================
+   MICU Laundry - Responsive Design
+   ====================== */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .laundry-list {
+    grid-template-columns: 1fr;
+  }
+
+  .order-form,
+  .payment-container,
+  .profile-container {
+    padding: 15px;
+  }
+
+  .history-table th,
+  .history-table td {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

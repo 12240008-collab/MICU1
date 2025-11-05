@@ -1,0 +1,128 @@
+/* === MICU Laundry Footer (v2 Centered Icons) === */
+.footer {
+  background: #007bff;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+  padding-top: 40px;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease;
+}
+
+.footer-container {
+  max-width: 1150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  align-items: start;
+  padding: 0 25px 30px;
+}
+
+.footer h3 {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-about h3,
+.footer-links h3 {
+  text-align: left;
+}
+
+.footer p {
+  color: #e3f2fd;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Tengah khusus untuk sosial media */
+.footer-social {
+  text-align: center;
+}
+
+.footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 12px;
+}
+
+.footer .social-icons a {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  padding: 10px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  background: #fff;
+  color: #007bff;
+  transform: translateY(-5px);
+}
+
+/* Footer Links */
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+  color: #e3f2fd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  background: rgba(0, 0, 0, 0.15);
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  color: #e3f2fd;
+  margin-top: 10px;
+}
+
+/* Smooth fade */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .footer-about h3,
+  .footer-links h3,
+  .footer p {
+    text-align: center;
+  }
+}
